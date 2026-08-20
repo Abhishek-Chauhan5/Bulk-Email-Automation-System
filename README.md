@@ -50,8 +50,6 @@ SMTP
      ↓
 Email
 
-```text
-
 ## Main Workflow
 
 User uploads an Excel file.
