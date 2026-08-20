@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Email</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+        }
+
+        .email-container {
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .email-card {
+            width: 600px;
+            max-width: 90%;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #2563eb;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .content h2 {
+            color: #2563eb;
+            margin-top: 0;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .student-details {
+            background-color: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        .student-details p {
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        .student-details strong {
+            color: #111827;
+        }
+
+        .footer {
+            background-color: #f1f5f9;
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email-container">
+
+        <div class="email-card">
+
+            <div class="header">
+                <h1>Welcome!</h1>
+            </div>
+
+            <div class="content">
+
+                <h2>Hello {{ student.name }},</h2>
+
+                <p>
+                    Your data has been successfully added to our system.
+                    We are happy to have you with us.
+                </p>
+
+                <div class="student-details">
+
+                    <p>
+                        <strong>Name:</strong>
+                        {{ student.name }}
+                    </p>
+
+                    <p>
+                        <strong>Age:</strong>
+                        {{ student.age }}
+                    </p>
+
+                    <p>
+                        <strong>Email:</strong>
+                        {{ student.email }}
+                    </p>
+
+                </div>
+
+                <p>
+                    Thank you for joining us!
+                </p>
+
+            </div>
+
+            <div class="footer">
+                <p>© 2026 Abhishek Group of Companies</p>
+                <p>This is an automated email. Please do not reply.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
