@@ -50,17 +50,5 @@ SMTP
      ↓
 Email
 
-## Main Workflow
-
-User uploads an Excel file.
-OpenPyXL reads the Excel data.
-Django validates the records.
-Duplicate records are identified.
-Valid records are stored in the database.
-Celery creates background email tasks.
-Redis manages the task queue.
-Celery Worker processes the tasks.
-Welcome emails are sent using SMTP.
-A remark report is generated for processed records.
 Installation
 1. Clone the Repository
