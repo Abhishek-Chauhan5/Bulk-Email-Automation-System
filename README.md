@@ -50,5 +50,3 @@ SMTP
      ↓
 Email
 
-Installation
-1. Clone the Repository
