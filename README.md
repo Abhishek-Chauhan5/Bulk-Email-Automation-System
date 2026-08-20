@@ -50,8 +50,10 @@ SMTP
      ↓
 Email
 
+```text
 
-##Main Workflow
+## Main Workflow
+
 User uploads an Excel file.
 OpenPyXL reads the Excel data.
 Django validates the records.
